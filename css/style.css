@@ -9,19 +9,6 @@ body {
   color: #004931;
   background-color: #00493125;
 }
-.bg-cream{
-  background-color: #FCF9D9;
-}
-.bg-green-st{
-  background-color: #014421;
-}
-.text-cream{
-  color: #FCF9D9;
-}
-.text-green-st{
-  color: #014421;
-}
-
 .fw-inherit {
   font-size: inherit;
 }
