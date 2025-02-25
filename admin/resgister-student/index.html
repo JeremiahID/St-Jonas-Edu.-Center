@@ -328,27 +328,27 @@
                                 <!-- profile photo  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
                                     <label for="passport" class="text-capitalize fs-9 form-label">Passport </label>
-                                    <input type="file" id="passport" class="form-control form-control-sm" required />
+                                    <input type="file" id="passport" class="form-control form-control-sm" />
                                 </div>
                                 <!-- place of birth  -->
                                 <div class="my-1 col-12 text-start">
                                     <label for="PlaceOfBirth" class="text-capitalize fs-9 form-label">Place Of
                                         Birth</label>
                                     <input type="text" id="PlaceOfBirth" placeholder="Place Of Birth"
-                                        class="form-control form-control-sm" required/>
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <!-- blood group  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
                                     <label for="bloodgroup" class="text-capitalize fs-9 form-label">Blood
                                         Group</label>
                                     <input type="text" id="bloodgroup" placeholder="Blood Group"
-                                        class="form-control form-control-sm" required/>
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <!-- genotype  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
                                     <label for="genotype" class="text-capitalize fs-9 form-label">Genotype</label>
                                     <input type="text" id="genotype" placeholder="Genotype"
-                                        class="form-control form-control-sm" required/>
+                                        class="form-control form-control-sm"/>
                                 </div>
                                 <div class="my-1 col-12 col-md-4 text-start"></div>
                                 <!-- Residential address  -->
@@ -356,14 +356,14 @@
                                     <label for="ResidentialAddress" class="text-capitalize fs-9 form-label">Residential
                                         Address</label>
                                     <input type="text" id="ResidentialAddress" placeholder="Residential Address"
-                                        class="form-control form-control-sm" required/>
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <!-- local government of origin  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
                                     <label for="LocalGovernmentofOrigin" class="text-capitalize fs-9 form-label">Local
                                         Government of Origin</label>
                                     <input type="text" id="LocalGovernmentofOrigin"
-                                        placeholder="Local Government of Origin" class="form-control form-control-sm" required/>
+                                        placeholder="Local Government of Origin" class="form-control form-control-sm" />
                                 </div>
                                 <!-- religion  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
@@ -377,13 +377,6 @@
                                     <input type="text" id="Nationality" placeholder="Nationality"
                                         class="form-control form-control-sm" required/>
                                 </div>
-                                <!-- school previously attended  -->
-                                <div class="my-1 col-12 text-start">
-                                    <label for="SchoolPreviouslyAttended" class="text-capitalize fs-9 form-label">School
-                                        Previously Attended</label>
-                                    <input type="text" id="SchoolPreviouslyAttended"
-                                        placeholder="School Previously Attended" class="form-control form-control-sm" />
-                                </div>
                                 <!-- last class passed  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
                                     <label for="LastClassPassed" class="text-capitalize fs-9 form-label">Last Class
@@ -393,11 +386,20 @@
                                 </div>
                                 <!-- class currently applying for  -->
                                 <div class="my-1 col-12 col-md-4 text-start">
-                                    <label for="ClassCurrentlyApplying For"
-                                        class="text-capitalize fs-9 form-label">Class Currently Applying For</label>
-                                    <input type="text" id="ClassCurrentlyApplyingFor"
-                                        placeholder="Class Currently Applying For" class="form-control form-control-sm"
-                                        required />
+                                    <label for="ClassCurrentlyApplyingFor" class="text-capitalize fs-9 form-label">Class Currently Applying For</label>
+                                    <select name="class_id" id="ClassCurrentlyApplyingFor" class="form-control form-control-sm" required="">
+                                        <option value="">Select a class</option>
+                                        <option value="1">
+                                            SS 1
+                                        </option>
+                                        <option value="2">
+                                            SS 2
+                                        </option>
+                                        <option value="3">
+                                            JSS 3
+                                        </option>
+    
+                                    </select>
                                 </div>
                                 <h3 class="fs-6 pt-5 fw-bold">Health Information</h3>
                                 <div class="my-1 col-12 d-flex gap-4 text-start">
@@ -429,37 +431,37 @@
                                     <label for="HealthCondition" class="text-capitalize fs-7 form-label">What is
                                         your childs general health condition?</label>
                                     <input type="text" id="HealthCondition" placeholder=""
-                                        class="form-control form-control-sm" required/>
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <h3 class="fs-6 fw-bold pt-2">Parents Details</h3>
                                 <div class="my-1 col-12 text-start">
                                     <label for="ParentsName" class="text-capitalize fs-9 form-label">Parents
                                         Name</label>
                                     <input type="text" id="ParentsName" placeholder="Parents Name"
-                                        class="form-control form-control-sm" required />
+                                        class="form-control form-control-sm"  />
                                 </div>
                                 <div class="my-1 col-12 text-start">
                                     <label for="ParentsAddress" class="text-capitalize fs-9 form-label">Parents
                                         Address</label>
                                     <input type="text" id="ParentsAddress" placeholder="Parents Address"
-                                        class="form-control form-control-sm" required />
+                                        class="form-control form-control-sm"  />
                                 </div>
                                 <div class="my-1 col-12 text-start">
                                     <label for="Occupation" class="text-capitalize fs-9 form-label">Occupation</label>
                                     <input type="text" id="Occupation" placeholder="Occupation"
-                                        class="form-control form-control-sm" required/>
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <div class="my-1 col-12 text-start">
                                     <label for="Fathersphone" class="text-capitalize fs-9 form-label">Fathers
                                         Phone</label>
                                     <input type="tel" id="Fathersphone" name="Fathersphone" placeholder="Fathers number"
-                                        class="form-control form-control-sm" required />
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <div class="my-1 col-12 text-start">
                                     <label for="Mothersphone" class="text-capitalize fs-9 form-label">Mothers
                                         Phone</label>
                                     <input type="tel" id="Mothersphone" name="Mothersphone" placeholder="Mothers number"
-                                        class="form-control form-control-sm" required />
+                                        class="form-control form-control-sm" />
                                 </div>
                                 <h3 class="fw-bold fs-6 pt-4">Create Username & Password</h3>
                                 <div class="my-1 col-12 text-start">
