@@ -99,7 +99,7 @@
                         </div>
                         <div class="d-grid py-1 p-0">
                             <a class="link-underline rounded-1 small-menu-blue p-2 text-light fs-7 link-underline-opacity-0"
-                                href="../students/">
+                                href="../students-list/">
                                 <div class="d-flex gap-2 align-items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
@@ -110,7 +110,7 @@
                         </div>
                         <div class="d-grid py-1 p-0">
                             <a class="link-underline rounded-1 small-menu-blue p-2 text-light fs-7 link-underline-opacity-0"
-                                href="../staffs/">
+                                href="../staffs-list/">
                                 <div class="d-flex gap-2 align-items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
@@ -382,25 +382,116 @@
                                     <input type="text" id="Nationality" placeholder="Nationality"
                                         class="form-control form-control-sm" required/>
                                 </div>
-                                <!-- class to teach  -->
-                                <div class="my-1 col-12 col-md-4 text-start d-flex">
-                                    <!-- Dropdown for selecting classes with multiple selection -->
-                                    <label for="class-select" class="px-2">Select Class:</label>
-                                    <select id="class-select" name="class[]" multiple required>
-                                        <option value="JSS1">JSS1</option>
-                                        <option value="SS1">SS1</option>
-                                        <!-- Add more classes as needed -->
-                                    </select>
-                                </div>
-                                <!-- Subject to teach  -->
-                                <div class="my-1 col-12 col-md-4 text-start d-flex">
-                                    <!-- Dropdown for selecting subjects with multiple selection -->
-                                    <label for="subject-select" class="px-2">Select Subject:</label>
-                                    <select id="subject-select" name="subject[]" multiple required>
-                                        <!-- Options will be populated dynamically based on selected classes -->
-                                    </select>
-                                </div>
 
+                                <!-- Subjects to Teach -->
+                                <div class="my-4">
+                                    <h3 class="fw-bold fs-6 pt-4">Select Subjects to Teach</h3>
+                                    <small>Disabled subjects means they are already assigned to a teacher</small>
+                                    <!--A Checked List of class and subject -->
+                                    <div class="row row-cols-1 row-cols-md-4 g-3">
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="1" id="subject-1" checked="">
+                                                    <label class="form-check-label text-start" for="subject-1">
+                                                        Mathematics
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="2" id="subject-2" checked="">
+                                                    <label class="form-check-label text-start" for="subject-2">
+                                                        English Language
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="3" id="subject-3" checked="">
+                                                    <label class="form-check-label text-start" for="subject-3">
+                                                        Mathematics
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="2" id="subject-2" checked="">
+                                                    <label class="form-check-label text-start" for="subject-5">
+                                                        English Language
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="1" id="subject-1" checked="">
+                                                    <label class="form-check-label text-start" for="subject-1">
+                                                        Mathematics
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="2" id="subject-2" checked="">
+                                                    <label class="form-check-label text-start" for="subject-5">
+                                                        English Language
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="1" id="subject-1" checked="">
+                                                    <label class="form-check-label text-start" for="subject-1">
+                                                        Mathematics
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="p-2 bg-light rounded">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="subject_ids" value="2" id="subject-2" checked="">
+                                                    <label class="form-check-label text-start" for="subject-2">
+                                                        English Language
+                                                        <small class="d-block text-muted">(SS 1)</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+    
+                                    </div>
+                                </div>
+                                
+
+    
                             </div>
                             <h3 class="fw-bold fs-6 pt-4">Create Username & Password</h3>
                             <div class="my-1 col-12 text-start">
