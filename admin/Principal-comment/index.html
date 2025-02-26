@@ -385,71 +385,77 @@
                                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                             </svg>
                         </div>
-                        <div class="fs-6 fw-bold text-red align-self-center ">Session Dashboard</div>
+                        <div class="fs-6 fw-bold text-red align-self-center ">Custom Comment Dashboard</div>
                     </div>
 
-                    <h1>Session List</h1>
+                    <h1>Select Details</h1>
 
-                    <!-- Create Class Button -->
-                    <button class="btn btn-secondary btn-sm fs-7 mt-4 mb-4" id="create-class">create Session</button>
+                    <!-- Student detail -->
+                    <div class="form-group">
+                        <label for="student">Select Student:</label>
+                        <select name="student_id" id="student" class="form-control">
+                            <option value="6">EFOSA EGHAREVBA SS 2</option>
+                            <option value="7">CLINTON OMORUYI SS 2</option>
+                            <option value="9">VICTORIA ONYEMACHI SS 2</option>
+                            <option value="288">IWINOSA OSARENKHOE BASIC 2 JASMINE</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Select Session -->
+                    <div class="form-group">
+                        <label for="session">Select Session:</label>
+                        <select name="session_id" id="session" class="form-control">
+                            <option value="1">2024/2025</option>
+                            <option value="2">2025/2026</option>
+                        </select>
+                    </div>
 
+                    <!-- Select Term -->
+                    <div class="form-group">
+                        <label for="term">Select Term:</label>
+                        <select name="term_id" id="term" class="form-control">
+                            <option value="1">Term 1</option>
+                            <option value="2">Term 2</option>
+                        </select>
+                    </div>
 
-                    <!-- Table detail -->
-                    <table>
+                    <!-- Comment box -->
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments" class="form-control" rows="5"></textarea>
+                    </div>
+
+                    <!-- Submit comment button -->
+                    <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+
+                    <!-- Displayed comment Table -->
+                    <h2 class="mt-5">Comments List</h2>
+                    <table class="table table-bordered mt-3">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Sessions</th>
+                                <th>Student</th>
+                                <th>Session</th>
+                                <th>Term</th>
+                                <th>Comments</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
-                        <tbody id="classTableBody">
+                        <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>2024/2025 academic year</td>
-
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2024/2025 academic year</td>
-
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>2024/2025 academic year</td>
+                                <td>EFOSA EGHAREVBA (SS 2)</td>
+                                <td>2024/2025</td>
+                                <td>Term 1</td>
+                                <td>Good Result! Please keep it up</td>
+                                <td>
+                                    <form action="" method="POST">
+                                        <input type="hidden" name="_token" value="" autocomplete="off">                                   
+                                        <input type="hidden" name="_method" value="DELETE">                                    
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                    
-                    <!-- Add Subjects Modal -->
-                    <div class="modal-content">
-                        <span class="close" id="closeCreateModal">×</span>
-                        <h2>Create Session</h2>
-                        <form id="createSessionForm" action="" method="POST">
-                            <input type="hidden" name="" value="" autocomplete="off">                      
-                            <label for="session">Select Academic Session:</label>
-                            <select name="academic_session" id="session" class="form-select" required="">
-                                <option value="">Select Session</option>
-                                <option value="2024/2025">2024/2025</option>
-                                <option value="2025/2026">2025/2026</option>
-                                <option value="2026/2027">2026/2027</option>
-                                <option value="2027/2028">2027/2028</option>
-                                <option value="2028/2029">2028/2029</option>
-                                <option value="2029/2030">2029/2030</option>
-                                <option value="2030/2031">2030/2031</option>
-                                <option value="2031/2032">2031/2032</option>
-                                <option value="2032/2033">2032/2033</option>
-                                <option value="2033/2034">2033/2034</option>
-                                <option value="2034/2035">2034/2035</option>
-                                <option value="2035/2036">2035/2036</option>
-                                <option value="2036/2037">2036/2037</option>
-                                <option value="2037/2038">2037/2038</option>
-                                <option value="2038/2039">2038/2039</option>
-                                <option value="2039/2040">2039/2040</option>
-                            </select>
-                            <br>
-                            <button type="submit" class="btn btn-secondary btn-sm fs-7" id="addSession">Add Session</button>
-                        </form>
-                    </div>
 
                 </div>
             </section>
