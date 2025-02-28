@@ -175,106 +175,73 @@
             </div>
             <div class="fs-6 fw-bold text-blue align-self-center ">My Profile</div>
           </div>
-          <div class="bg-light px-3 rounded text-blue">
-            <div class="info">
-              <div class="text-start px-2 py-5">
-                <div class="fs-6 fw-semibold text-capitalize">
-                  Your Personal Info
+          <!-- Class comment -->
+          <div class="container mt-4">
+            <form action="" method="POST" class="mb-4">
+                <input type="hidden" name="_token" value="QnuoJdZ1Miw7KPjLvjQxSEmYA3fbzhQ2jBoR5QWE" autocomplete="off">    
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                        <select name="student_id" class="form-select" required="">
+                            <option value="">Select Student</option>  
+                              <option value="284">
+                                  Jeremiah Efe
+                              </option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <select name="session_id" class="form-select" required="">
+                            <option value="">Select Session</option>
+                            <option value="1">
+                                2024/2025
+                            </option>
+                            <option value="2">
+                                2025/2026
+                            </option>
+                          </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <select name="term_id" class="form-select" required="">
+                            <option value="">Select Term</option>
+                            <option value="1">
+                                Term 1
+                            </option>
+                            <option value="2">
+                                Term 2
+                            </option>
+                          </select>
+                    </div>
+
+                    <div class="col-12">
+                        <textarea name="comment" class="form-control" rows="3" placeholder="Enter your comment here" required=""></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Save Comment</button>
+                    </div>
                 </div>
-                <div class="fs-7">
-                  To make changes to personal info please contact school
-                  Admin.
-                </div>
-              </div>
-              <div class="d-grid gap-4">
-                <ul class="list-group list-group-flush text-start">
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="text-blue text-blue fs-7 col-4 col-md-2"><span class="px-2">Name:</span></div>
-                      <div class="col-8 fs-7 col-md-10">
-                        <span class="pe-1 text-blue" id="Title">Mr.</span><span class="text-capitalize text-blue"
-                          id="FullName">Osasere
-                          Ikponmwosa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="text-blue fs-7 col-4 col-md-2">
-                        <span class="px-2">Gender:</span>
-                      </div>
-                      <div class="col-8 fs-7 col-md-10">
-                        <span id="Gender" class="text-lowercase text-blue">Male</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="text-blue fs-7 col-4 col-md-2">
-                        <span class="px-2">Email:</span>
-                      </div>
-                      <div class="col-8 fs-7 col-md-10">
-                        <a href="mailto:edenosas1@gmail.com" class="text-lowercase text-blue "
-                          id="Email"><span>edenosas1@gmail.com</span></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="text-blue fs-7 col-4 col-md-2">
-                        <span class="px-2">Phone:</span>
-                      </div>
-                      <div class="col-8 fs-7 col-md-10">
-                        <a href="tel:+2348165179215" class="text-lowercase text-blue" id="Phone">0816 517 9215</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="text-blue fs-7 col-4 col-md-2">
-                        <span class="px-2">Address</span>
-                      </div>
-                      <div class="col-8 fs-7 col-md-10">
-                        <span id="Address" class="text-capitalize text-blue">1 Amegor street off nova road, Ugbowo
-                          benin
-                          city</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            </form>
+
+            <div class="table-responsive mt-4">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Student</th>
+                            <th>Session</th>
+                            <th>Term</th>
+                            <th>Comment</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                            <td colspan="5" class="text-center">No comments found</td>
+                        </tr>
+                                                </tbody>
+                </table>
             </div>
-            <div class="password text-blue pt-3">
-              <div class="text-start px-2 py-5">
-                <div class="fs-6 fw-semibold text-capitalize">
-                  Change Your Password
-                </div>
-                <div class="fs-7 text-blue">
-                  You can change your password here
-                </div>
-              </div>
-              <form action="">
-                <div class="row pb-5">
-                  <div class="my-1 col-12 col-md-6 text-start">
-                    <label for="oldPassword" class="text-capitalize fs-9 form-label">Old Password</label>
-                    <input type="password" id="oldPassword" placeholder="Enter Old Password"
-                      class="form-control form-control-sm" />
-                  </div>
-                  <div class="my-1 col-12 col-md-6 text-start">
-                    <label for="newPassword" class="text-capitalize fs-9 form-label">new Password</label>
-                    <input type="password" id="newPassword" placeholder="Enter New Password"
-                      class="form-control form-control-sm" />
-                  </div>
-                  <div class="my-1 col-12 text-start">
-                    <label for="confirmPassword" class="text-capitalize fs-9 form-label">confirm Password</label>
-                    <input type="password" id="confirmPassword" placeholder="Re-Enter New Password"
-                      class="form-control form-control-sm" />
-                  </div>
-                  <input type="submit" value="Change password" class="btn my-4 btn-secondary text-capitalize">
-                </div>
-              </form>
-            </div>
-          </div>
+        </div>
         </div>
       </section>
     </div>
