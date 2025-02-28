@@ -14,10 +14,9 @@
   <div class="preloader">
     <div class="loader"></div>
   </div>
+  <!-- this is for tablet and desktop view randeebobo theres is another for mobile view below -->
   <main class="container-fluid">
     <div class="row">
-      <!-- this is for tablet and desktop view randeebobo theres is another for mobile view below -->
-
       <div class="col-3 bg-blue text-light container d-none d-md-block">
         <section class="side-nav text-light d-flex flex-column py-4">
           <div class="flex-grow-1">
@@ -91,7 +90,7 @@
           </div>
         </section>
       </div>
-
+      <!-- this is the actual menu for the mobile view it's an offcanvas -->
       <!-- this is the actual menu for the mobile view it's an offcanvas -->
       <div class="offcanvas bg-blue  text-light offcanvas-start" tabindex="-1" id="mobileMenu"
         aria-labelledby="mobileMenuLabel">
@@ -173,42 +172,56 @@
                   d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
               </svg>
             </div>
-            <div class="fs-6 fw-bold text-blue align-self-center ">Manage Scores</div>
+            <div class="fs-6 fw-bold text-blue align-self-center ">Select courses</div>
           </div>
           <div class="bg-light text-blue full-height px-3 rounded">
             <div class="text-start px-2 py-5">
-              <div class="fs-6 fw-semibold">Select Session and Term</div>
-              <div class="fs-7">Choose the session and term to enter/modify scores for students.</div>
+              <div class="fs-6 fw-semibold">SESSION: 2024/2025, TERM: 1</div>
+              <div class="fs-7">Select a course to enter/modify scores for students.</div>
             </div>
-            <form id="select-session-term-form" method="GET" action="/dashboard/enter-scores/Select-courses/">
-              <div class="form-group">
-                <label for="session_id" class="form-label">Session</label>
-                <select id="session_id" name="session_id" class="form-control">
-                                  <option value="1">2024/2025</option>
-                                  <option value="2">2025/2026</option>
-                              </select>
-              </div>
-              <div class="form-group mt-3">
-                <label for="term_id" class="form-label">Term</label>
-                <select id="term_id" name="term_id" class="form-control">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                              </select>
-              </div>
-              <button type="submit" class="btn btn-secondary mt-3">Proceed</button>
-            </form>
+            <div class="d-grid gap-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">SS 1</h5>
+                            <p class="card-text">Coding (SS 1)</p>
+                            <a href="../Select-courses/manage-scores/" class="btn btn-secondary">Manage Scores</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">SS 2</h5>
+                            <p class="card-text">Coding (SS 2)</p>
+                            <a href="../Select-courses/manage-scores/" class="btn btn-secondary">Manage Scores</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">JSS 3</h5>
+                            <p class="card-text">Coding (JSS 3)</p>
+                            <a href="../Select-courses/manage-scores/" class="btn btn-secondary">Manage Scores</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">JSS 2</h5>
+                            <p class="card-text">Coding (JSS 2)</p>
+                            <a href="../Select-courses/manage-scores/" class="btn btn-secondary">Manage Scores</a>
+                        </div>
+                    </div>
+            </div>
           </div>
         </div>
-      </section>
+    </div>
+    </section>
     </div>
   </main>
   <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src='/dashboard/jquery/jquery.min.js'></script>
+  <script src="/dashboard/jquery/jquery.min.js"></script>
   <script>
     $(window).load(function () {
       $(".preloader").delay(400).fadeOut("slow");
       $("#overlayer").delay(400).fadeOut("slow");
-    })
+    });
   </script>
 </body>
 

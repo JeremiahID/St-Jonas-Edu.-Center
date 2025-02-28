@@ -176,41 +176,81 @@
           </div>
           <div class="bg-light vh-100 text-blue rounded">
             <div class="text-start px-2 py-5">
-              <div class="fs-6 fw-semibold">SUBJECT: CODING, SESSION: 2023/2024, TERM: SECOND</div>
-              <div class="fs-7">Enter/Modify Scores for Students in this class and click on Save
+              <div class="fs-6 fw-semibold">SUBJECT: <span class="fw-bolder">CODING</span>, SESSION: 2024/2025, TERM: 1</div>
+              <div class="fs-7">Enter/Modify Scores for Students in this class and click anywhere to save changes
               </div>
             </div>
-            <div class="d-grid p-0 gap-4">
-              <div class="text-blue px-2 text-uppercase text-start">
-                <div id="student-name" class="pt-2 fs-6">
-                  ALOHAN OSAKPOLOR SOLOMON
+    
+            <div class="d-grid p-0 gap-4" id="scores-container">
+                <div class="text-blue px-2 text-uppercase text-start student-score-entry" >
+                  <div id="student-name" class="pt-2 fs-6">
+                    BLESSING NANCY IKWUOSHO
+                  </div>
+                  <div class="fs-7">
+                    <span class="px-1">|</span><span class="">female</span>
+                  </div>
+    
+                  <div class="row pb-4 justify-content-between">
+                    <div class="col-12 col-lg-4">
+                      <label for="test1" class="form-label text-capitalize fs-7">Test 1</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="test1" name="test1" value="0">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <label for="test2" class="form-label text-capitalize fs-6">Test 2</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="test2" name="test2" value="0">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <label for="exam" class="form-label text-capitalize fs-6">Exam</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="exam" name="exam" value="0">
+                    </div>
+                  </div>
                 </div>
-                <div class="fs-7">
-                  DPHS21000732<span class="px-1">|</span><span class="">Male</span>
+                <div class="text-blue px-2 text-uppercase text-start student-score-entry" data-student-id="22" data-subject-id="275" data-class-id="1" data-session-id="1" data-term-id="1">
+                  <div id="student-name" class="pt-2 fs-6">
+                    BEAUTY  EREYI
+                  </div>
+                  <div class="fs-7">
+                    <span class="px-1">|</span><span class="">female</span>
+                  </div>
+    
+                  <div class="row pb-4 justify-content-between">
+                    <div class="col-12 col-lg-4">
+                      <label for="test1_22" class="form-label text-capitalize fs-7">Test 1</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="test1_22" name="test1" value="0">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <label for="test2_22" class="form-label text-capitalize fs-6">Test 2</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="test2_22" name="test2" value="0">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <label for="exam_22" class="form-label text-capitalize fs-6">Exam</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="exam_22" name="exam" value="0">
+                    </div>
+                  </div>
                 </div>
-                <form action="">
-                  <div class="row pb-4 justify-content-between ">
+                <div class="text-blue px-2 text-uppercase text-start student-score-entry" data-student-id="23" data-subject-id="275" data-class-id="1" data-session-id="1" data-term-id="1">
+                  <div id="student-name" class="pt-2 fs-6">
+                    TREASURE  OSAKPOLOR
+                  </div>
+                  <div class="fs-7">
+                    <span class="px-1">|</span><span class="">female</span>
+                  </div>
+    
+                  <div class="row pb-4 justify-content-between">
                     <div class="col-12 col-lg-4">
-                      <label for="" class="form-label text-capitalize fs-7">Test 1
-                      </label>
-                      <input value="0" type="number" class="form-control form-control-lg" id="" />
+                      <label for="test1_23" class="form-label text-capitalize fs-7">Test 1</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="test1_23" name="test1" value="0">
                     </div>
                     <div class="col-12 col-lg-4">
-                      <label for="" class="form-label text-capitalize fs-6">Test 2
-                      </label>
-                      <input value="0" type="number" class="form-control form-control-lg" id="" />
+                      <label for="test2_23" class="form-label text-capitalize fs-6">Test 2</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="test2_23" name="test2" value="0">
                     </div>
                     <div class="col-12 col-lg-4">
-                      <label for="" class="form-label text-capitalize fs-6">Exam
-                      </label>
-                      <input value="0" type="number" class="form-control form-control-lg" id="" />
+                      <label for="exam_23" class="form-label text-capitalize fs-6">Exam</label>
+                      <input type="number" class="form-control form-control-lg score-input" id="exam_23" name="exam" value="0">
                     </div>
-                    <div class="d-grid pt-3">
-                      <input type="submit" value="Submit" class="btn btn-secondary rounded-0">
-                    </div>
-                </form>
-              </div>
-              <!-- <div class="fs-6 ">Subject Code: <span class="px-2">Cod</span></div> -->
+                  </div>
+                </div> 
             </div>
           </div>
         </div>
