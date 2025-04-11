@@ -234,30 +234,56 @@
                         class="form-control form-control-sm" required />
                   </div>
                 </div>
-                
-                <!-- Times Present in School -->
+
+                <!-- Next Term Begin and Class teacher Name  -->
+                <div class="row g-3 my-4">
+                  
+                  <!-- Next Term Begin  -->
+                  <div class="my-1 col-12 col-md-4 text-start">
+                    <label for="termStart" class="text-capitalize fs-9 form-label">Next Term Begin</label>
+                    <input type="date" id="termStart" value="2024-01-01"
+                        class="form-control form-control-sm" required />
+                  </div>
+
+                  <!-- Class Teacher Name -->
+                  <div class="my-1 col-12 col-md-4 text-start">
+                    <label for="tecaherName" class="text-capitalize fs-9 form-label">Class Teacher Name</label>
+                    <input type="text" id="tecaherName" placeholder = "Teacher's name"
+                        class="form-control form-control-sm" required />
+                  </div>
+
+                </div>
+
+                <!-- Selecting student for times present  -->
                 <div class="row g-3 my-4">
                   <!-- select student from Drop down -->
-                    <div class="col-md-4">
-                        <select name="student_id" class="form-select" required="">
-                            <option value="">Select Student</option>  
-                              <option value="">
-                                  Jeremiah Efe
-                              </option>
-                        </select>
-                    </div>
-                    <!-- Time Present  -->
-                    <div class="my-1 col-12 col-md-4 text-start">
-                      <label for="timePresent" class="text-capitalize fs-9 form-label">Times Present</label>
-                      <input type="date" id="timePresent" value="2024-01-01"
-                          class="form-control form-control-sm" required />
-                    </div>
+                  <div class="col-md-4">
+                      <select name="student_id" title="select-student" class="form-select" required="">
+                          <option value="">Select Student</option>  
+                            <option value="">
+                                Jeremiah Efe
+                            </option>
+                            <option value="">
+                              Jeremiah Efe
+                          </option>
+                          <option value="">
+                            Jeremiah Efe
+                        </option>
+                      </select>
+                  </div>
 
+                  <!-- Time Present  -->
+                  <div class="my-1 col-12 col-md-4 text-start">
+                    <label for="timePresent" class="text-capitalize fs-9 form-label">Times Present</label>
+                    <input type="date" id="timePresent" value="2024-01-01"
+                        class="form-control form-control-sm" required />
+                  </div>
 
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Save Content</button>
-                    </div>
                 </div>
+                
+                <div class="col-12 my-5">
+                  <button type="submit" class="btn btn-primary">Save Content</button>
+              </div>
             </form>
         </div>
         </div>
